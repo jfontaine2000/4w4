@@ -20,11 +20,11 @@
     margin-left: auto;
 
       &__liens {
-
+        display: flex;
+          justify-content: center;
         a {
-
           svg{
-            color:red;
+            color:white;
           }
 
         }

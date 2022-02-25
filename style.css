@@ -2,7 +2,7 @@
 /*
 theme name: exercice-2-joannye-fontaine
 Author: Joannye Fontaine
-Author URI: https://github.com/jfontaine2000/2022-4w4/
+Author URI: https://github.com/jfontaine2000/4w4.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -385,7 +385,7 @@ a:hover, a:active {
   color: white;
 }
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be58f;
+  color: #0F8AA6;
 }
 .header__titre a:focus {
   outline: thin dotted;
@@ -419,7 +419,7 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 .formation__cours {
-  background-color: #d1e9ff;
+  background-color: #BF3459;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -447,7 +447,7 @@ COMPOSANTES
 
 .cours__sigle {
   font-size: 1.2rem;
-  color: #8a5353;
+  color: white;
   margin: 0;
 }
 
@@ -479,6 +479,13 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   margin-left: auto;
+}
+.util__liens {
+  display: flex;
+  justify-content: center;
+}
+.util__liens a svg {
+  color: white;
 }
 
 #burger {
@@ -533,6 +540,7 @@ COMPOSANTES
   }
 }
 .recherche {
+  display: flex;
   background-color: rgba(0, 0, 0, 0.1);
   width: 300px;
   position: relative;
@@ -548,7 +556,16 @@ COMPOSANTES
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
 }
+.recherche__bouton svg {
+  color: white;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 75%;
+}
+
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #A60321;
