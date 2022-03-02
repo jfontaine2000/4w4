@@ -529,17 +529,17 @@ COMPOSANTES
   padding: 0;
 }
 
-.menu-item {
+.site__header__menu__ul {
   margin: 0;
   padding: 0;
 }
-.menu-item a {
+.site__header__menu__ul a {
   display: block;
   text-decoration: none;
   padding: 4px;
   background-color: #0F8AA6;
 }
-.menu-item a:hover {
+.site__header__menu__ul a:hover {
   background-color: #021E73;
 }
 
@@ -586,21 +586,21 @@ COMPOSANTES
 }
 .site__footer__menu__ul {
   display: flex;
-  list-style-type: none;
   justify-content: center;
 }
-.site__footer__menu__ul .menu-item {
+.site__footer__menu__ul li {
   margin: 10px 5px;
+  list-style: none;
 }
-.site__footer__menu__ul .menu-item a {
+.site__footer__menu__ul li a {
   display: flex;
   align-items: center;
   padding: 3px;
 }
-.site__footer__menu__ul .menu-item a svg {
+.site__footer__menu__ul li a svg {
   color: #ffffff;
 }
-.site__footer__menu__ul .menu-item a:hover svg {
+.site__footer__menu__ul li a:hover svg {
   color: black;
 }
 

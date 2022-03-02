@@ -7,10 +7,10 @@
 
       &__ul{ // .site__footer__menu__ul
           display : flex;
-          list-style-type: none;
           justify-content: center;
-          .menu-item { // .site__footer__menu__ul .menu-item
+          li { // .site__footer__menu__ul .menu-item
               margin : 10px 5px;
+              list-style: none;
             a{ // .site__footer__menu__ul .menu-item a
               display : flex;
               align-items: center;
