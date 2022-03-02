@@ -346,11 +346,16 @@ html {
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+.formation__cours {
+  background-color: #BF3459;
+  box-shadow: black 1px -1px 10px;
+}
+
 a {
   color: white;
 }
 a:visited {
-  color: #BF3459;
+  color: #7c7777;
 }
 a:hover, a:focus, a:active {
   color: #A60321;
@@ -419,8 +424,6 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 .formation__cours {
-  background-color: #BF3459;
-  box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -622,10 +625,25 @@ ANIMATION
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #A60321;
+  background-color: #fcb900;
   color: #fff;
   font-size: 3rem;
   animation: anim-entete 1s forwards;
+}
+.animation__bloc__un {
+  animation: anim-entete 2s forwards;
+}
+.animation__bloc__deux {
+  animation: anim-entete 2.5s forwards;
+}
+.animation__bloc__trois {
+  animation: anim-entete 3s forwards;
+}
+.animation__bloc__quatre {
+  animation: anim-entete 3.5s forwards;
+}
+.animation__bloc__cinq {
+  animation: anim-entete 4s forwards;
 }
 
 @keyframes anim-entete {

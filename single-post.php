@@ -8,7 +8,7 @@
      <div class="article__contenu">
      <?php if (has_post_thumbnail()): ?> 
                <figure class="article__contenu__figure">
-                    <?php the_post_thumbnail("thumbnail"); ?>
+                    <?php the_post_thumbnail(); ?>
                </figure>
           <?php endif; ?>   
      <?php endif ?>
