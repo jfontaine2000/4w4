@@ -17,6 +17,7 @@
 
 <body <?php body_class("site"); ?>>
     <header class="site__header">
+        <svg width="50px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" color="#000000"><g><path d="M10.998 22a.846.846 0 010-1.692 9.308 9.308 0 000-18.616 9.286 9.286 0 00-7.205 3.416.846.846 0 11-1.31-1.072A10.978 10.978 0 0110.998 0c6.075 0 11 4.925 11 11s-4.925 11-11 11z"></path><animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 11 11" to="360 11 11" dur="1s" calcMode="linear" repeatCount="indefinite"></animateTransform></g></svg>
         <h1 class="header__titre">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                 <?php bloginfo('name'); ?></h1>
@@ -24,7 +25,7 @@
         <h2 class="header__description"><?php bloginfo('description'); ?></h2>
         <section class="util">
             <div class="util__liens">
-                <a href="">
+                <a href="https://translate.google.ca/?hl=en&tab=rT">
                     <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                         fill="currentColor" color="#000000">
                         <path fill-rule="evenodd"
@@ -32,7 +33,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="">
+                <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/">
                     <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                         fill="currentColor" color="#000000">
                         <path fill-rule="evenodd"
@@ -40,7 +41,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="">
+                <a href="https://www.maisonneuve.coop/">
                     <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                         fill="currentColor" color="#000000">
                         <path fill-rule="evenodd"
@@ -48,7 +49,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="">
+                <a href="https://i.pinimg.com/736x/41/30/8f/41308f33522724024f6491ea61fb392b.jpg">
                     <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                         fill="currentColor" color="#000000">
                         <path fill-rule="evenodd"
@@ -56,7 +57,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="">
+                <a href="https://www.cmaisonneuve.qc.ca/wp-content/uploads/2021/11/calendrier_scolaire_2021-2022-v3.pdf">
                     <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                         fill="currentColor" color="#000000">
                         <path fill-rule="evenodd"

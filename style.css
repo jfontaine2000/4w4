@@ -462,17 +462,27 @@ COMPOSANTES
 
 .site__header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #021E73;
   color: white;
   padding-left: 10px;
+}
+.site__header svg {
+  color: white;
 }
 .site__header .header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .site__header .header__description {
+  margin-left: 20px;
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline overline;
 }
 
 .util {
@@ -482,7 +492,7 @@ COMPOSANTES
 }
 .util__liens {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .util__liens a svg {
   color: white;
