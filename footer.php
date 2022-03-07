@@ -19,8 +19,7 @@
                 quibusdam voluptatibus dolores tempora fugiat iste exercitationem nihil, excepturi dolorem veritatis
                 officia perspiciatis quidem harum!</p>
                 <?php wp_nav_menu(array(
-                "menu" => "externe",
-            )) ?>
+                "menu" => "externe")) ?>
         </section>
     </div>
     <!----rangée de plusieurs lignes---->
