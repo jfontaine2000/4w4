@@ -611,6 +611,26 @@ COMPOSANTES
   text-align: center;
 }
 
+.site__footer {
+  display: flex;
+  flex-direction: column;
+}
+.site__footer__colonne {
+  display: flex;
+  justify-content: space-around;
+}
+.site__footer__colonne section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  flex: 0 0 30%;
+}
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

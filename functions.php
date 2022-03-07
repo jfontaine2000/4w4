@@ -12,6 +12,7 @@ function cidw_4w4_register_nav_menu(){
     register_nav_menus( array(
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
+        'menu_footer_colonne'  => __( 'Menu footer colonne', 'cidw_4w4' ),
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
@@ -35,4 +36,3 @@ add_filter("wp_nav_menu_objects","cidw_4w4_filtre_choix_menu");
 add_theme_support('post-thumbnails');
 
 ?>
-
