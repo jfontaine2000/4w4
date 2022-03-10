@@ -3,23 +3,15 @@
     <div class="site__footer__colonne">
         <section class="footer__article">
             <h2>Titre 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto ea nobis. Laborum cum voluptas
-                quibusdam voluptatibus dolores tempora fugiat iste exercitationem nihil, excepturi dolorem veritatis
-                officia perspiciatis quidem harum!</p>
+            <?php get_sidebar('footer_colonne_1'); ?>
         </section>
         <section class="footer__adresse">
             <h2>Titre 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto ea nobis. Laborum cum voluptas
-                quibusdam voluptatibus dolores tempora fugiat iste exercitationem nihil, excepturi dolorem veritatis
-                officia perspiciatis quidem harum!</p>
+            <?php get_sidebar('footer_colonne_2'); ?>
         </section>
         <section class="footer__liens">
             <h2>Titre 3</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto ea nobis. Laborum cum voluptas
-                quibusdam voluptatibus dolores tempora fugiat iste exercitationem nihil, excepturi dolorem veritatis
-                officia perspiciatis quidem harum!</p>
-                <?php wp_nav_menu(array(
-                "menu" => "externe")) ?>
+            <?php get_sidebar('footer_colonne_3'); ?>
         </section>
     </div>
     <!----rangée de plusieurs lignes---->
@@ -27,6 +19,9 @@
         <section class="footer__description"></section>
         <section class="footer__nav"></section>
         <section class="footer__copyright"></section>
+        <section class="footer__sociaux">
+        <?php get_sidebar('footer_ligne_1'); ?>
+        </section>
         <section class="footer__auteur"></section>
     </div>
 
