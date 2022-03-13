@@ -52,6 +52,7 @@
   &__colonne {
     display: flex;
     justify-content: space-around;
+
     section {
       display: flex;
       flex-direction: column;
@@ -61,25 +62,34 @@
 
     h2 {
       font-size: 2.5rem;
+      color: black;
+      font-family: $font__titre;
     }
 
-    .footer__article{
+    .footer__article {
       display: flex;
       justify-content: center;
       align-items: center;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
     }
 
-    .footer__liens{
+    .footer__liens {
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 1.5rem;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
     }
 
-    .footer__adresse{
+    .footer__adresse {
       display: flex;
       justify-content: center;
       align-items: center;
+      font-size: 1.5rem;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
     }
 
   }
@@ -88,6 +98,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .footer__copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      color: white;
+      text-decoration: underline;
+      font-family: 'Times New Roman', Times, serif;
+    }
   }
 
 }
