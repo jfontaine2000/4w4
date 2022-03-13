@@ -18,6 +18,10 @@ VARIABLES
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
+@font-face {
+  font-family: "Clown Font";
+  src: url(CandyColouredClown.otf);
+}
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -355,10 +359,10 @@ a {
   color: white;
 }
 a:visited {
-  color: #7c7777;
+  color: #00ff2a;
 }
 a:hover, a:focus, a:active {
-  color: #A60321;
+  color: #a8a8a8;
 }
 a:focus {
   outline: thin dotted;
@@ -371,7 +375,7 @@ a:hover, a:active {
   color: #ffffff;
 }
 .site__footer a:visited {
-  color: #BF3459;
+  color: #ff0044;
 }
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
   color: black;
@@ -417,7 +421,7 @@ COMPOSANTES
   font-size: 2rem;
   color: black;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Clown Font";
 }
 .formation__liste {
   display: flex;
@@ -460,7 +464,7 @@ COMPOSANTES
 
 .erreur-404 h1 {
   font-size: 5rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Clown Font";
 }
 
 .site__header {
@@ -476,7 +480,8 @@ COMPOSANTES
 }
 .site__header .header__titre {
   font-size: 3em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Clown Font";
+  margin-left: 10px;
 }
 .site__header .header__description {
   margin-left: 20px;
@@ -580,7 +585,7 @@ COMPOSANTES
 }
 
 .site__footer {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Clown Font";
   background-color: #A60321;
   padding: 15px;
 }
@@ -622,8 +627,27 @@ COMPOSANTES
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
+  border: 4px dotted #ddd;
   flex: 0 0 30%;
+}
+.site__footer__colonne h2 {
+  font-size: 2.5rem;
+}
+.site__footer__colonne .footer__article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site__footer__colonne .footer__liens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.site__footer__colonne .footer__adresse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .site__footer__ligne {
   display: flex;

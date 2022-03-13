@@ -10,7 +10,6 @@
             <?php get_sidebar('footer_colonne_2'); ?>
         </section>
         <section class="footer__liens">
-            <h2>Titre 3</h2>
             <?php get_sidebar('footer_colonne_3'); ?>
         </section>
     </div>
