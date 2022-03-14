@@ -496,6 +496,7 @@ COMPOSANTES
 .util {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: auto;
 }
 .util__liens {
