@@ -3,24 +3,28 @@
     background-color: rgb(#000, .1);
     width: 300px;
     position: relative;
+    width: 100%;
+    margin: 10px 0 0 0;
+    height: 2rem;
     &__input {
         background-color: transparent;
         width: 100%;
+        color: $color__font-header;
     }
 
     &__bouton {
+        height: 100%;
         position: absolute;
         top: 0;
         right: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: black;
+        background-color: $color__background-svg;
+        border: none;
         svg {
-            color: white;
-            background-color: black;
-            width: 20px;
-            height: 20px;
+            color: $color__font-svg;
+            background-color: $color__background-svg;
             border-radius: 75%;
         }
 

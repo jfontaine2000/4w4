@@ -16,14 +16,15 @@
 </head>
 
 <body <?php body_class("site"); ?>>
-    
     <header class="site__header">
+        <section class="site__header__titre">
         <?= get_custom_logo(); ?>
         <h1 class="header__titre">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                 <?php bloginfo('name'); ?></h1>
         </a>
         <h2 class="header__description"><?php bloginfo('description'); ?></h2>
+        </section>
         <section class="util">
             <div class="util__liens">
                 <a href="https://translate.google.ca/?hl=en&tab=rT">
@@ -84,7 +85,5 @@
         $icone = '<svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000000"><path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"></path></svg>';
         wp_nav_menu(array("menu"=>"principal",
                             "container"=>"nav",
-                            "container_class" => "site__header__menu",
-                            "menu_class" => "site__header__menu__ul",
                             "link_before" => "$icone")); ?>
     </section>
