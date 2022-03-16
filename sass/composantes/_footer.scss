@@ -43,6 +43,11 @@
 .footer__author {
   color: $color__font-footer;
   text-align: center;
+  font-size: 1rem;
+  font-family: $font__footer;
+  @media screen and (min-width: $largeur__media--tablette) {
+    font-size: 1.5rem;
+  }
 }
 
 .site__footer {
@@ -56,21 +61,25 @@
     section {
       display: flex;
       flex-direction: column;
-      border: 4px dotted #ddd;
+      border: 4px dotted $color__font-footer;
       flex: 0 0 30%;
     }
 
     h2 {
-      font-size: 2.5rem;
-      color: black;
+      font-size: 1.5rem;
+      color: $color__font-main;
       font-family: $font__titre;
+      text-align: center;
+      @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 2.5rem;
+      }
     }
 
     .footer__article {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
+      color: $color__font-footer;
       font-family: 'Times New Roman', Times, serif;
     }
 
@@ -78,18 +87,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
-      color: white;
+      font-size: 1rem;
+      color: $color__font-footer;
       font-family: 'Times New Roman', Times, serif;
+      @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 1.5rem;
+      }
     }
 
     .footer__adresse {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
-      color: white;
+      font-size: 1rem;
+      color: $color__font-footer;
       font-family: 'Times New Roman', Times, serif;
+      @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 1.5rem;
+      }
     }
 
   }
@@ -103,10 +118,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.3rem;
-      color: white;
+      font-size: 1rem;
+      color: $color__font-footer;
       text-decoration: underline;
       font-family: 'Times New Roman', Times, serif;
+      @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 1.3rem;
+      }
     }
   }
 

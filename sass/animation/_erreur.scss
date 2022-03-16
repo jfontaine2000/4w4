@@ -1,0 +1,28 @@
+.erreur-404__animation{
+    display : flex;
+    justify-content: center;
+
+    &__bloc{
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        width : 100px;
+        height : 100px;
+        background-color: $color__background-animation-erreur;
+        color : $color__background-animation-font;
+        font-size: 3rem;
+        animation : anim-entete 1s forwards;
+    }
+}
+
+@keyframes anim-entete {
+    0% {
+      transform : scale(100vh);  
+    }
+    50% {
+        transform : scale(0);   
+    }
+    100% {
+        transform : scale(100vh); 
+    }
+}
