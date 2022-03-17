@@ -423,6 +423,12 @@ COMPOSANTES
   color: black;
   margin: 10px 0px;
   font-family: "Clown Font";
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .formation__titre {
+    font-size: 4rem;
+  }
 }
 .formation__liste {
   display: flex;
@@ -479,7 +485,7 @@ COMPOSANTES
   flex-direction: column;
   align-items: center;
   background-color: #021E73;
-  color: white;
+  color: #ffffff;
   padding-left: 10px;
 }
 @media screen and (min-width: 800px) {
@@ -606,7 +612,7 @@ COMPOSANTES
 .recherche__input {
   background-color: transparent;
   width: 100%;
-  color: white;
+  color: #ffffff;
 }
 .recherche__bouton {
   height: 100%;
@@ -623,6 +629,18 @@ COMPOSANTES
   color: #ffffff;
   background-color: black;
   border-radius: 75%;
+}
+
+.no-result {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Clown Font";
+  text-decoration: underline;
+}
+@media screen and (min-width: 800px) {
+  .no-result {
+    font-size: 6rem;
+  }
 }
 
 .site__footer {
@@ -744,6 +762,24 @@ COMPOSANTES
   }
 }
 
+.article__contenu {
+  padding: 30px;
+}
+.article__contenu__figure {
+  text-align: center;
+}
+.article__titre {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Clown Font";
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 800px) {
+  .article__titre {
+    font-size: 4rem;
+  }
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -800,10 +836,25 @@ ANIMATION
   background-color: red;
   color: #ffffff;
   font-size: 3rem;
-  animation: anim-entete 1s forwards;
+  animation: anim-erreur 2s forwards;
+}
+.erreur-404__animation__bloc__un {
+  animation: anim-erreur 2s infinite;
+}
+.erreur-404__animation__bloc__deux {
+  animation: anim-erreur 2.5s infinite;
+}
+.erreur-404__animation__bloc__trois {
+  animation: anim-erreur 3s infinite;
+}
+.erreur-404__animation__bloc__quatre {
+  animation: anim-erreur 3.5s infinite;
+}
+.erreur-404__animation__bloc__cinq {
+  animation: anim-erreur 4s infinite;
 }
 
-@keyframes anim-entete {
+@keyframes anim-erreur {
   0% {
     transform: scale(100vh);
   }

@@ -11,11 +11,27 @@
         background-color: $color__background-animation-erreur;
         color : $color__background-animation-font;
         font-size: 3rem;
-        animation : anim-entete 1s forwards;
+        animation : anim-erreur 2s forwards;
+
+        &__un {
+            animation : anim-erreur 2s infinite;
+        }
+        &__deux {
+            animation : anim-erreur 2.5s infinite;
+        }
+        &__trois {
+            animation : anim-erreur 3s infinite;
+        }
+        &__quatre {
+            animation : anim-erreur 3.5s infinite;
+        }
+        &__cinq {
+            animation : anim-erreur 4s infinite;
+        }
     }
 }
 
-@keyframes anim-entete {
+@keyframes anim-erreur {
     0% {
       transform : scale(100vh);  
     }

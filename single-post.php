@@ -4,11 +4,11 @@
           <h1>---- single-post.php ------</h1>
      <?php if (have_posts()): the_post(); ?>
      <article class="article">
-     <?php the_title() ?>    
+     <h1 class="article__titre"><?= get_the_title(); ?> </h1>   
      <div class="article__contenu">
      <?php if (has_post_thumbnail()): ?> 
                <figure class="article__contenu__figure">
-                    <?php the_post_thumbnail('medium'); ?>
+                    <?php the_post_thumbnail('large'); ?>
                </figure>
           <?php endif; ?>   
      <?php endif ?>

@@ -31,3 +31,14 @@
     }
 
 }
+
+.no-result {
+    text-align: center;
+    font-size: 3rem;
+    font-family: $font__titre;
+    text-decoration: underline;
+    @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 6rem;
+      }
+    
+}
