@@ -1,38 +1,131 @@
 .site__footer {
-    font-family: $font__titre;
-    background-color: $color__background-footer;
-    padding: 15px;
+  font-family: $font__titre;
+  background-color: $color__background-footer;
+  padding: 15px;
 
-    &__menu{ // .site__footer__menu
+  &__menu {
+    // .site__footer__menu
 
-      &__ul{ // .site__footer__menu__ul
-          display : flex;
-          list-style-type: none;
-          justify-content: center;
-          .menu-item { // .site__footer__menu__ul .menu-item
-              margin : 10px 5px;
-            a{ // .site__footer__menu__ul .menu-item a
-              display : flex;
-              align-items: center;
-              padding : 3px;
-                svg { // .site__footer__menu__ul .menu-item a svg
-                  color: $color__link__footer;
-                }
-           
-              &:hover {
-                svg { // .site__footer__menu__ul .menu-item a svg
-                  color: $color__link__footer-hover;
-                }
-              }
+    &__ul {
+      // .site__footer__menu__ul
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 10px 5px;
+        list-style: none;
+
+        a {
+          // .site__footer__menu__ul .menu-item a
+          display: flex;
+          align-items: center;
+          padding: 3px;
+
+          svg {
+            // .site__footer__menu__ul .menu-item a svg
+            color: $color__link__footer;
+          }
+
+          &:hover {
+            svg {
+              // .site__footer__menu__ul .menu-item a svg
+              color: $color__link__footer-hover;
             }
-          }    
-       }
+          }
+        }
+      }
     }
   }
+}
 
 .footer__titre,
 .footer__presentation,
 .footer__author {
   color: $color__font-footer;
   text-align: center;
+  font-size: 1rem;
+  font-family: $font__footer;
+  @media screen and (min-width: $largeur__media--tablette) {
+    font-size: 1.5rem;
+  }
+}
+
+.site__footer {
+  display: flex;
+  flex-direction: column;
+
+  &__colonne {
+    display: flex;
+    justify-content: space-around;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      border: 4px dotted $color__font-footer;
+      flex: 0 0 30%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: $color__font-main;
+      font-family: $font__titre;
+      text-align: center;
+      @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .footer__article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color__font-footer;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .footer__liens {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      color: $color__font-footer;
+      font-family: 'Times New Roman', Times, serif;
+      @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .footer__adresse {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      color: $color__font-footer;
+      font-family: 'Times New Roman', Times, serif;
+      @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 1.5rem;
+      }
+    }
+
+  }
+
+  &__ligne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer__copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      color: $color__font-footer;
+      text-decoration: underline;
+      font-family: 'Times New Roman', Times, serif;
+      @media screen and (min-width: $largeur__media--tablette) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
 }

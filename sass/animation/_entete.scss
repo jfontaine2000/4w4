@@ -9,10 +9,26 @@
         width : 100px;
         height : 100px;
         border-radius: 50%;
-        background-color: #A60321;
-        color : #fff;
+        background-color: $color__background-animation-entete;
+        color : $color__background-animation-font;
         font-size: 3rem;
         animation : anim-entete 1s forwards;
+        
+        &__un {
+            animation : anim-entete 2s forwards;
+        }
+        &__deux {
+            animation : anim-entete 2.5s forwards;
+        }
+        &__trois {
+            animation : anim-entete 3s forwards;
+        }
+        &__quatre {
+            animation : anim-entete 3.5s forwards;
+        }
+        &__cinq {
+            animation : anim-entete 4s forwards;
+        }
     }
 }
 

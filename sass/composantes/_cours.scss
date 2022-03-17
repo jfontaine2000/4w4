@@ -1,6 +1,17 @@
 .article {
-
     &__contenu {
-        display: flex;
+        padding: 30px;
+        &__figure {
+            text-align: center;
+        }
+    }
+    &__titre {
+        color: $color__font-barre;
+        text-align: center;
+        font-family: $font__titre;
+        font-size: 2.5rem;
+        @media screen and (min-width: $largeur__media--tablette) {
+            font-size: 4rem;
+          }
     }
 }

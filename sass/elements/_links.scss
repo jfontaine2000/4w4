@@ -1,4 +1,4 @@
-@mixin links-svg(	$couleur, 
+@mixin links(	$couleur, 
 				$couleur--visited, 
 				$couleur--hover)
 {
@@ -22,6 +22,16 @@
 	&:active {
 		outline: 0;
 	}
+}
+
+@mixin box ( $couleur__background,
+$couleur__shadow ) {
+	background-color: $couleur__background;
+	box-shadow:$couleur__shadow 1px -1px 10px;
+}
+
+.formation__cours {
+	@include box ($color__background-cours, $color__font-main)
 }
 
 

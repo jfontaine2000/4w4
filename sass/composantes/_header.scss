@@ -1,21 +1,67 @@
 .site__header {
-    display: flex;
-    background-color: $color__background-header;
-    color: $color__font-header;
-    padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color__background-header;
+  color: $color__font-header;
+  padding-left: 10px;
 
-    .header__titre {
-      font-size: 3em;
-      font-family: $font__titre;
-    }
-    .header__description {
-      font-size: 1.5rem;
-      font-family: $font__main;
-    }
+  @media screen and (min-width: $largeur__media--tablette) {
+    flex-direction: row;
   }
 
-  .util {
+  &__titre {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  svg {
+    color: $color__font-svg;
+  }
+
+  .custom-logo-link, .header__titre, .header__description{
+    padding: 10px;
+  }
+
+  .header__titre {
+    font-size: clamp(3rem, 4vw, 8rem);
+    font-family: $font__titre;
+    margin-left: 10px;
+  }
+
+  .header__description {
+    margin-left: 20px;
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: $font__main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline overline;
+  }
+}
+
+.util {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  width: 90%;
+  @media screen and (min-width: $largeur__media--tablette) {
     margin-left: auto;
+    width: 300px;
+    align-items: stretch;
   }
+  &__liens {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      svg {
+        color: $color__font-svg;
+      }
+
+    }
+
+  }
+}

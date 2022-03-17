@@ -1,2 +1,8 @@
+@font-face {
+    font-family: 'Clown Font';
+    src: url(CandyColouredClown.otf);
+}
+
 $font__main : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-$font__titre : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$font__titre : 'Clown Font';
+$font__footer: 'Times New Roman', Times, serif;
