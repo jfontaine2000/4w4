@@ -2,7 +2,6 @@
     <!----première rangée de colonne---->
     <div class="site__footer__colonne">
         <section class="footer__article">
-            <h2>Titre 1</h2>
             <?php get_sidebar('footer_colonne_1'); ?>
         </section>
         <section class="footer__adresse">
