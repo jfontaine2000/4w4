@@ -2,7 +2,7 @@
 $color__background-body : #F2F2F2;
 $color__background-body-clip : #ffe600;
 $color__background-main : #BF3459;
-$color__background-cours : #BF3459;
+$color__background-cours : #c7c7c7;
 $color__background-header : #021E73;
 $color__background-barre : #0F8AA6;
 $color__background-footer : #A60321;
@@ -11,9 +11,9 @@ $color__background-link-hover : #021E73;
 $color__background-svg: black;
 
 /* ---------------- LIENS */
-$color__link : hsl(0, 0%, 100%);
+$color__link : black;
 $color__link-hover : #a8a8a8;
-$color__link-visited : #00ff2a;
+$color__link-visited : #ffe600;
 /* ---------------- LIENS FOOTER */
 $color__link__footer : #ffffff;
 $color__link__footer-hover : black;
@@ -34,3 +34,9 @@ $color__font-svg : #ffffff;
 $color__background-animation-entete: #fcb900;
 $color__background-animation-erreur: red;
 $color__background-animation-font: #ffffff;
+
+/* ---------------- BOUTON / LIEN MENU */
+$color__bouton__color: black ;
+$color__bouton__background: #ffe600;
+$color__bouton__color--hover: #ffffff;
+$color__bouton__background--hover: #021E73;
