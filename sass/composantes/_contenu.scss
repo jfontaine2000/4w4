@@ -22,35 +22,6 @@
     &__liste {
         display: flex;
         flex-wrap: wrap;
-
-        .web {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
-            background-repeat: no-repeat;
-        }
-        .jeu{
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
-            background-repeat: no-repeat;
-        }
-        .comm {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
-            background-repeat: no-repeat;
-        }
-        .design {
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
-            background-repeat: no-repeat;
-        }
-        .utilitaire{
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
-            background-repeat: no-repeat;
-        }
-        .video {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
-            background-repeat: no-repeat;
-        }
-        .creation-3d {
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
-            background-repeat: no-repeat;
-        }
     }
     
     &__cours {
@@ -86,4 +57,33 @@
 
 .cours__description {
     font-size: 1rem;
+}
+
+.web {
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+    background-repeat: no-repeat;
+}
+.jeu{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+    background-repeat: no-repeat;
+}
+.comm {
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
+    background-repeat: no-repeat;
+}
+.design {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+    background-repeat: no-repeat;
+}
+.utilitaire{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+    background-repeat: no-repeat;
+}
+.video {
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+    background-repeat: no-repeat;
+}
+.creation-3d {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+    background-repeat: no-repeat;
 }
