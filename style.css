@@ -903,7 +903,7 @@ COMPOSANTES
   color: black;
 }
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #021E73;
+  background-color: rgb(12, 92, 240);
 }
 @media screen and (min-width: 800px) {
   .menu-categorie_cours-container .menu .menu-item:hover {
@@ -920,6 +920,12 @@ COMPOSANTES
 }
 .menu-categorie_cours-container .menu .menu-item:hover a {
   color: #ffffff;
+}
+.menu-categorie_cours-container .menu .menu-item .current-menu-item {
+  background-color: rgb(6, 25, 61);
+}
+.menu-categorie_cours-container .menu .menu-item .current-menu-item a {
+  color: rgb(243, 233, 142);
 }
 
 .menu-accueil-container .menu {

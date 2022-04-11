@@ -26,9 +26,14 @@
 </section>
 
 <?php 
-        wp_nav_menu(array("menu"=>"menu_accueil",
-                            "container"=>"nav"));
-?>
+    /* --------------------------------------------- menu accueil */
+    wp_nav_menu(array("menu"=>"accueil",
+                            "container"=>"nav")); ?>
+
+   <?php 
+   /* --------------------------------------------- menu evenement */
+   wp_nav_menu(array("menu"=>"evenement",
+                            "container"=>"nav")); ?>
 
    <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
