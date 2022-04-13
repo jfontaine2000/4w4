@@ -25,11 +25,12 @@
     </div>
 </section>
 
+<h2>Activités en TIM</h2>
 <?php 
     /* --------------------------------------------- menu accueil */
     wp_nav_menu(array("menu"=>"accueil",
                             "container"=>"nav")); ?>
-
+<h2>Les événements importants pour l'année</h2>
    <?php 
    /* --------------------------------------------- menu evenement */
    wp_nav_menu(array("menu"=>"evenement",

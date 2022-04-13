@@ -20,6 +20,7 @@ VARIABLES
 /* ---------------- FONT */
 /* ---------------- ANIMATION */
 /* ---------------- BOUTON / LIEN MENU */
+/* -----------------------------------------  carte d'accueil */
 @font-face {
   font-family: "Clown Font";
   src: url(CandyColouredClown.otf);
@@ -411,6 +412,8 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
 }
 
 h3 {
@@ -924,48 +927,96 @@ COMPOSANTES
   color: rgb(243, 233, 142);
 }
 
-.menu-accueil-container .menu,
-.menu-evenement-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
-.menu-accueil-container .menu .accueil__cours .menu-item-icone,
-.menu-evenement-container .menu .accueil__cours .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+.menu-accueil-container .menu .menu-item-246 .menu-item-icone, .menu-evenement-container .menu .menu-item-246 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=puzzle");
 }
-.menu-accueil-container .menu .menu-item,
-.menu-evenement-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item-245 .menu-item-icone, .menu-evenement-container .menu .menu-item-245 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=star");
+}
+.menu-accueil-container .menu .menu-item-244 .menu-item-icone, .menu-evenement-container .menu .menu-item-244 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user");
+}
+.menu-accueil-container .menu .menu-item-243 .menu-item-icone, .menu-evenement-container .menu .menu-item-243 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=trending-up");
+}
+.menu-accueil-container .menu .menu-item-262 .menu-item-icone, .menu-evenement-container .menu .menu-item-262 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=document");
+}
+.menu-accueil-container .menu .menu-item-261 .menu-item-icone, .menu-evenement-container .menu .menu-item-261 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=eye");
+}
+.menu-accueil-container .menu .menu-item-260 .menu-item-icone, .menu-evenement-container .menu .menu-item-260 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=film");
+}
+.menu-accueil-container .menu .menu-item-259 .menu-item-icone, .menu-evenement-container .menu .menu-item-259 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=emoji-happy");
+}
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #ffe600;
+  border-radius: 15px;
   flex: 0 0 20%;
-  height: 175px;
+  height: 200px;
 }
-.menu-accueil-container .menu .menu-item a,
-.menu-evenement-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: clamp(1rem, 2vw, 2.2rem);
-  color: black;
+  font-family: "Clown Font";
+  font-size: 1.5rem;
+  text-align: center;
   height: 100%;
 }
-.menu-accueil-container .menu .menu-item a .menu-item-description,
-.menu-evenement-container .menu .menu-item a .menu-item-description {
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
+  width: 90%;
 }
-.menu-accueil-container .menu .menu-item a .menu-item-icone,
-.menu-evenement-container .menu .menu-item a .menu-item-icone {
-  border: 1px solid #aaa;
-  width: 2rem;
-  height: 2rem;
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+  font-size: 1.3rem;
+}
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+  color: black;
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   margin-top: auto;
+  background-size: cover;
+}
+
+.menu-accueil-container .menu-item {
+  background-color: #ffe600;
+}
+.menu-accueil-container .menu-item a {
+  color: black;
+}
+.menu-accueil-container .menu-item:hover {
+  background-color: rgb(12, 92, 240);
+}
+.menu-accueil-container .menu-item:hover a {
+  color: #ffffff;
+}
+
+.menu-evenement-container .menu-item {
+  background-color: #ffe600;
+}
+.menu-evenement-container .menu-item a {
+  color: rgb(0, 0, 0);
+}
+.menu-evenement-container .menu-item:hover {
+  background-color: rgb(12, 92, 240);
+}
+.menu-evenement-container .menu-item:hover a {
+  color: #ffffff;
 }
 
 /* ---------------------------------------------------------
