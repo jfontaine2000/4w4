@@ -26,7 +26,7 @@
                  get_template_part('gabarit/content','macrame');    
                  endif
                  ?>
-<?php get_template_part('gabarit/content', 'cours');?>
+<?php //get_template_part('gabarit/content', 'cours');?>
             <?php endwhile ?>
             <?php endif ?>
         </div>
