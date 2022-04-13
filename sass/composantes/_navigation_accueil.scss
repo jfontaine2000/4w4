@@ -67,7 +67,25 @@
                 }
 
             }
+            &:hover {
+                background-color: $color__bouton__background--hover;
+            @media screen and (min-width : $largeur__media--tablette){
+                animation : anim-nav 1s forwards;
 
+                @keyframes anim-nav {
+                    from {
+                      transform: scale(1);
+                    }
+                  
+                    to {
+                      transform: scale(1.1);
+                    }
+                  }
+            }
+                a {
+                    color: $color__bouton__color--hover;
+                }
+            }
         }
 
 
