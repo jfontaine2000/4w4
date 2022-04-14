@@ -143,9 +143,9 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
 else
 {
         $ordre = get_query_var('ordre', 'asc');
-        $cletri = get_query_var('cletri', 'title');       
+        $cle = get_query_var('cletri', 'title');       
         $query->set('order',  $ordre);
-        $query->set('orderby', $cletri);
+        $query->set('orderby', $cle);
         $query->set('postperpage','-1');
         return $query;
     } 

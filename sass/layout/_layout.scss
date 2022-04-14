@@ -2,7 +2,10 @@
     //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
     font-family: $font__main;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
+
 
 .home::after{
     content: "";
@@ -28,9 +31,13 @@
     background-color: $color__background-barre;
 }
 
-.site__main{
+.site .site__main{
     grid-area: main;
     background-color: rgba ($color__background-main, .5);
+    width: 100vw;
+    @media screen and (min-width: $largeur__media--tablette){
+        width: 75vw;
+    }
 }
 
 .site__footer{
