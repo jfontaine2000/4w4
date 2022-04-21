@@ -13,8 +13,9 @@
   
         })
     }
-  
-    boite__modale.addEventListener('mousedown', function(){
-      boite__modale.classList.remove('ouvrir')
+    let boite__modale__fermeture = document.querySelector(".boite__modale__fermeture")
+    boite__modale__fermeture.addEventListener('mousedown', function(){
+        boite__modale.classList.remove('ouvrir')
+        console.log()
     })
   })() 

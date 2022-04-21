@@ -1040,17 +1040,17 @@ COMPOSANTES
 }
 
 .boite__modale {
-  position: absolute;
-  top: 25vh;
-  left: 25vw;
+  position: fixed;
+  top: 25%;
+  left: 25%;
   border: 5px solid #aaa;
   background-color: #f00;
-  width: 50vw;
-  height: 50vh;
+  width: 50%;
+  height: 50%;
   transform: scale(0);
   transition: all 1s ease-in-out;
 }
-.boite__modale .ouvrir {
+.ouvrir {
   transform: scale(1);
 }
 
