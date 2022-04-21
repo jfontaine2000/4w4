@@ -1047,10 +1047,10 @@ COMPOSANTES
   background-color: #f00;
   width: 50vw;
   height: 50vh;
-  transform: scale(0.1);
+  transform: scale(0);
   transition: all 1s ease-in-out;
 }
-.boite__modale:hover {
+.boite__modale .ouvrir {
   transform: scale(1);
 }
 
@@ -1190,7 +1190,7 @@ LAYOUT
 }
 @media screen and (min-width: 800px) {
   .site .site__main {
-    width: 75vw;
+    width: 100vw;
   }
 }
 
