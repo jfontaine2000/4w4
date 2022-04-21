@@ -1039,6 +1039,21 @@ COMPOSANTES
   color: #ffffff;
 }
 
+.boite__modale {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  border: 5px solid #aaa;
+  background-color: #f00;
+  width: 50vw;
+  height: 50vh;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+.boite__modale:hover {
+  transform: scale(1);
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1141,6 +1156,7 @@ LAYOUT
 .site {
   background-color: #F2F2F2;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
 }
 
 .home::after {
@@ -1167,9 +1183,15 @@ LAYOUT
   background-color: #0F8AA6;
 }
 
-.site__main {
+.site .site__main {
   grid-area: main;
   background-color: rgba #BF3459, 0.5;
+  width: 100vw;
+}
+@media screen and (min-width: 800px) {
+  .site .site__main {
+    width: 75vw;
+  }
 }
 
 .site__footer {
