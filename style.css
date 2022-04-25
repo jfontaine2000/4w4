@@ -495,6 +495,9 @@ COMPOSANTES
     width: 30%;
   }
 }
+.formation__cours__invisible {
+  display: none;
+}
 
 .cours__titre {
   font-size: 1.5rem;
