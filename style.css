@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: exercice-3-joannye-fontaine
+theme name: exercice-4-joannye-fontaine
 Author: Joannye Fontaine
 Author URI: https://github.com/jfontaine2000/4w4.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -21,6 +21,7 @@ VARIABLES
 /* ---------------- ANIMATION */
 /* ---------------- BOUTON / LIEN MENU */
 /* -----------------------------------------  carte d'accueil */
+/* -----------------------------------------  boite modale */
 @font-face {
   font-family: "Clown Font";
   src: url(CandyColouredClown.otf);
@@ -354,7 +355,7 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 .formation__cours {
-  background-color: #c7c7c7;
+  background-color: #bdbdbd;
   box-shadow: rgb(0, 0, 0) 1px -1px 10px;
 }
 
@@ -362,10 +363,10 @@ a {
   color: black;
 }
 a:visited {
-  color: #ffe600;
+  color: #ffffff;
 }
 a:hover, a:focus, a:active {
-  color: #a8a8a8;
+  color: #575757;
 }
 a:focus {
   outline: thin dotted;
@@ -378,7 +379,7 @@ a:hover, a:active {
   color: #ffffff;
 }
 .site__footer a:visited {
-  color: #ff0044;
+  color: #3ab8a2;
 }
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
   color: black;
@@ -450,7 +451,7 @@ COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   padding: 10px 15px;
-  background-color: #BF3459;
+  background-color: #f05858;
   border-radius: 5px;
   box-shadow: rgb(57, 68, 62) 1px -1px 10px;
 }
@@ -459,9 +460,23 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
 }
+.formation__filtre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+.formation__filtre a {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px dotted black;
+  font-family: "Clown Font";
+}
 .formation__titre {
   font-size: 2rem;
   color: rgb(0, 0, 0);
+  padding: 50px;
   margin: 10px 0px;
   font-family: "Clown Font";
   text-align: center;
@@ -565,7 +580,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #021E73;
+  background-color: #6092a1;
   color: #ffffff;
   padding-left: 10px;
 }
@@ -726,7 +741,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Clown Font";
-  background-color: #A60321;
+  background-color: #3ab8a2;
   padding: 15px;
 }
 .site__footer__menu__ul {
@@ -884,6 +899,45 @@ COMPOSANTES
   }
 }
 
+/* CSS */
+.cours__desc__ouvrir {
+  margin-left: 10px;
+  margin-top: 5px;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.cours__desc__ouvrir:hover,
+.cours__desc__ouvrir:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #575757;
+}
+
+.cours__desc__ouvrir:active {
+  opacity: 0.5;
+}
+
 /*----------------- Navigation Catégorie Cours --------------------- */
 .menu-categorie_cours-container .menu {
   display: flex;
@@ -894,7 +948,7 @@ COMPOSANTES
   margin-top: 10px;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #ffe600;
+  background-color: #ff9f9f;
 }
 @media screen and (min-width: 800px) {
   .menu-categorie_cours-container .menu .menu-item {
@@ -906,7 +960,7 @@ COMPOSANTES
   color: black;
 }
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: rgb(12, 92, 240);
+  background-color: #6092a1;
 }
 @media screen and (min-width: 800px) {
   .menu-categorie_cours-container .menu .menu-item:hover {
@@ -966,7 +1020,7 @@ COMPOSANTES
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffe600;
+  background-color: #ff9f9f;
   border-radius: 15px;
   flex: 0 0 20%;
   height: 200px;
@@ -997,7 +1051,7 @@ COMPOSANTES
   background-size: cover;
 }
 .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
-  background-color: rgb(12, 92, 240);
+  background-color: #6092a1;
 }
 @media screen and (min-width: 800px) {
   .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
@@ -1017,20 +1071,20 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu-item {
-  background-color: #ffe600;
+  background-color: #ff9f9f;
 }
 .menu-accueil-container .menu-item a {
   color: black;
 }
 .menu-accueil-container .menu-item:hover {
-  background-color: rgb(12, 92, 240);
+  background-color: #6092a1;
 }
 .menu-accueil-container .menu-item:hover a {
   color: #ffffff;
 }
 
 .menu-evenement-container .menu-item {
-  background-color: #ffe600;
+  background-color: #ff9f9f;
 }
 .menu-evenement-container .menu-item a {
   color: rgb(0, 0, 0);
@@ -1047,16 +1101,49 @@ COMPOSANTES
   top: 25%;
   left: 25%;
   border: 5px solid #aaa;
-  background-color: #f00;
+  background-color: #a60321;
   width: 50%;
   height: 50%;
   transform: scale(0);
   transition: all 1s ease-in-out;
 }
+.boite__modale__fermeture {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.boite__modale__fermeture:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.boite__modale__fermeture:active {
+  transform: scale(0.95);
+}
+.boite__modale__texte {
+  text-align: center;
+}
+
 .ouvrir {
   transform: scale(1);
 }
 
+/* CSS */
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1070,7 +1157,7 @@ ANIMATION
   align-items: center;
   width: 100px;
   height: 100px;
-  background-color: #fcb900;
+  background-color: #ff9f9f;
   color: #ffffff;
   font-size: 3rem;
   animation: anim-entete 1s forwards;
@@ -1171,35 +1258,29 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffe600;
+  background-color: #ff9f9f;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: rbga(#021E73, 0.5);
+  background-color: rbga(#6092a1, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #0F8AA6;
+  background-color: #c98990;
 }
 
 .site .site__main {
   grid-area: main;
-  background-color: rgba #BF3459, 0.5;
-  width: 100vw;
-}
-@media screen and (min-width: 800px) {
-  .site .site__main {
-    width: 100vw;
-  }
+  background-color: rgba #f05858, 0.5;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #A60321;
+  background-color: #3ab8a2;
 }
 
 /*configuration mobile */

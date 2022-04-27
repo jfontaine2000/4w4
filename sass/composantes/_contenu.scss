@@ -9,9 +9,24 @@
     display: flex;
     flex-direction: column;
 
+    &__filtre{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        a{
+            font-size: 1.5rem;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 2px dotted black;
+            font-family: $font__titre;
+        }
+    }
+
     &__titre {
         font-size: 2rem;
         color: $color__font-main;
+        padding: 50px;
         margin: 10px 0px;
         font-family: $font__titre;
         text-align: center;

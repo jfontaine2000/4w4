@@ -1,23 +1,23 @@
 /* ---------------- BACKGROUND */
 $color__background-body : #F2F2F2;
-$color__background-body-clip : #ffe600;
-$color__background-main : #BF3459;
-$color__background-cours : #c7c7c7;
-$color__background-header : #021E73;
-$color__background-barre : #0F8AA6;
-$color__background-footer : #A60321;
+$color__background-body-clip : #ff9f9f;
+$color__background-main : #f05858;
+$color__background-cours : #bdbdbd;
+$color__background-header : #6092a1;
+$color__background-barre : #c98990;
+$color__background-footer : #3ab8a2;
 $color__background-link : #0F8AA6;
-$color__background-link-hover : #021E73;
+$color__background-link-hover : #6092a1;
 $color__background-svg: black;
 
 /* ---------------- LIENS */
 $color__link : black;
-$color__link-hover : #a8a8a8;
-$color__link-visited : #ffe600;
+$color__link-hover : #575757;
+$color__link-visited : #ffffff;
 /* ---------------- LIENS FOOTER */
 $color__link__footer : #ffffff;
 $color__link__footer-hover : black;
-$color__link__footer-visited : #ff0044;
+$color__link__footer-visited : #3ab8a2;
 /* ---------------- LIENS HEADER titre principal du site */
 $color__link__header : hsl(0, 82%, 68%);
 $color__link__header-hover : #0F8AA6;
@@ -31,20 +31,23 @@ $color__font-footer : #ffffff;
 $color__font-svg : #ffffff;
 
 /* ---------------- ANIMATION */
-$color__background-animation-entete: #fcb900;
+$color__background-animation-entete: #ff9f9f;
 $color__background-animation-erreur: red;
 $color__background-animation-font: #ffffff;
 
 /* ---------------- BOUTON / LIEN MENU */
 $color__bouton__color: black ;
-$color__bouton__background: #ffe600;
+$color__bouton__background: #ff9f9f;
 $color__bouton__color--hover: #ffffff;
-$color__bouton__background--hover :rgb(12, 92, 240);
+$color__bouton__background--hover :#6092a1;
 $color__bouton__color--current : rgb(243, 233, 142);
 $color__bouton__background--current : rgb(6, 25, 61);
 
 /* -----------------------------------------  carte d'accueil */
 $couleur__carte__evenement: rgb(0, 0, 0);
-$couleur__carte__evenement__background: #ffe600;
+$couleur__carte__evenement__background: #ff9f9f;
 $couleur__carte__evenement--hover: #ffffff;
 $couleur__carte__evenement__background--hover: rgb(12, 92, 240);
+
+/* -----------------------------------------  boite modale */
+$couleur__boite__modale__background: #a60321;
