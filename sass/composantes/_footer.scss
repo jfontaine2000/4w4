@@ -61,8 +61,10 @@
     section {
       display: flex;
       flex-direction: column;
-      border: 4px dotted $color__font-footer;
       flex: 0 0 30%;
+      @media screen and (min-width: $largeur__media--tablette) {
+        border: 4px dotted $color__font-footer;
+      }
     }
 
     h2 {
@@ -84,14 +86,23 @@
     }
 
     .footer__liens {
+      padding: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
       font-size: 1rem;
       color: $color__font-footer;
       font-family: 'Times New Roman', Times, serif;
       @media screen and (min-width: $largeur__media--tablette) {
         font-size: 1.5rem;
+      }
+      .widget-title {
+        font-family: $font__titre;
+        color: $color__font-main;
+        @media screen and (min-width: $largeur__media--tablette) {
+          font-size: 3rem;
+        }
       }
     }
 

@@ -1,6 +1,6 @@
 .animation{
     display : flex;
-    justify-content: space-between;
+    justify-content: center;
 
     &__bloc{
         display : flex;
@@ -8,7 +8,6 @@
         align-items: center;
         width : 100px;
         height : 100px;
-        border-radius: 50%;
         background-color: $color__background-animation-entete;
         color : $color__background-animation-font;
         font-size: 3rem;
@@ -29,14 +28,27 @@
         &__cinq {
             animation : anim-entete 4s forwards;
         }
+        &__six {
+            animation : anim-entete 4.5s forwards;
+        }
+        &__sept {
+            animation : anim-entete 5s forwards;
+        }
     }
 }
 
 @keyframes anim-entete {
     0% {
-      transform : translateY(-100vh);  
+      transform: scale(3);
     }
-    100% {
-        transform : translateY(0);  
+  
+    50% {
+      transform: scale(1);
     }
-}
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }

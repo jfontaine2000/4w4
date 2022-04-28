@@ -1,5 +1,5 @@
 /*
-theme name: tp-1-joannye-fontaine
+theme name: exercice-4-joannye-fontaine
 Author: Joannye Fontaine
 Author URI: https://github.com/jfontaine2000/4w4.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -26,6 +26,7 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balises";
 
 /* ---------------------------------------------------------
 COMPOSANTES
@@ -37,6 +38,10 @@ COMPOSANTES
 @import "composantes/recherche";
 @import "composantes/footer";
 @import "composantes/cours";
+@import "composantes/navigation_categorie_cours";
+@import "composantes/navigation_accueil";
+@import "composantes/evenement";
+@import "composantes/boite-modale";
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

@@ -2,7 +2,9 @@
     //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
     font-family: $font__main;
+    position: relative;
 }
+
 
 .home::after{
     content: "";
@@ -28,7 +30,7 @@
     background-color: $color__background-barre;
 }
 
-.site__main{
+.site .site__main{
     grid-area: main;
     background-color: rgba ($color__background-main, .5);
 }

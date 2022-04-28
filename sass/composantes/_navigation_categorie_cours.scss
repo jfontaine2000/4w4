@@ -1,0 +1,50 @@
+/*----------------- Navigation Catégorie Cours --------------------- */
+
+.menu-categorie_cours-container { //nav
+    .menu { //ul
+        display: flex;
+        justify-content: space-around;
+
+        .menu-item {//li
+            margin: 0 10px;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: $color__bouton__background;
+            @media screen and (min-width : $largeur__media--tablette){
+                font-size: 1.2rem;
+                font-family: $font__titre;
+            }
+            a {
+                color: $color__bouton__color;
+            }
+
+            &:hover {
+                background-color: $color__bouton__background--hover;
+            @media screen and (min-width : $largeur__media--tablette){
+                animation : anim-nav 1s forwards;
+
+                @keyframes anim-nav {
+                    from {
+                      transform: scale(1);
+                    }
+                  
+                    to {
+                      transform: scale(1.2);
+                    }
+                  }
+            }
+                a {
+                    color: $color__bouton__color--hover;
+                }
+            }
+        // fin .menu-item
+        .current-menu-item {
+            background-color: $color__bouton__background--current;
+            a{
+                color: $color__bouton__color--current;
+            }
+        } 
+        }
+    }
+}

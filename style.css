@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: tp-1-joannye-fontaine
+theme name: exercice-4-joannye-fontaine
 Author: Joannye Fontaine
 Author URI: https://github.com/jfontaine2000/4w4.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -19,6 +19,9 @@ VARIABLES
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /* ---------------- ANIMATION */
+/* ---------------- BOUTON / LIEN MENU */
+/* -----------------------------------------  carte d'accueil */
+/* -----------------------------------------  boite modale */
 @font-face {
   font-family: "Clown Font";
   src: url(CandyColouredClown.otf);
@@ -352,18 +355,18 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 .formation__cours {
-  background-color: #BF3459;
-  box-shadow: black 1px -1px 10px;
+  background-color: #bdbdbd;
+  box-shadow: rgb(0, 0, 0) 1px -1px 10px;
 }
 
 a {
-  color: white;
+  color: black;
 }
 a:visited {
-  color: #00ff2a;
+  color: #ffffff;
 }
 a:hover, a:focus, a:active {
-  color: #a8a8a8;
+  color: #575757;
 }
 a:focus {
   outline: thin dotted;
@@ -376,7 +379,7 @@ a:hover, a:active {
   color: #ffffff;
 }
 .site__footer a:visited {
-  color: #ff0044;
+  color: #3ab8a2;
 }
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
   color: black;
@@ -389,7 +392,7 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #f06a6a;
+  color: hsl(0deg, 82%, 68%);
 }
 .header__titre a:visited {
   color: white;
@@ -404,23 +407,76 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   padding: 10px 15px;
-  background-color: #BF3459;
+  background-color: #f05858;
   border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
+  box-shadow: rgb(57, 68, 62) 1px -1px 10px;
 }
 
 .formation {
   display: flex;
   flex-direction: column;
 }
+.formation__filtre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+.formation__filtre a {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px dotted black;
+  font-family: "Clown Font";
+}
 .formation__titre {
   font-size: 2rem;
-  color: black;
+  color: rgb(0, 0, 0);
+  padding: 50px;
   margin: 10px 0px;
   font-family: "Clown Font";
   text-align: center;
@@ -435,6 +491,8 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 .formation__cours {
+  background-position: 97% 3%;
+  background-size: 2rem 2rem;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -452,21 +510,59 @@ COMPOSANTES
     width: 30%;
   }
 }
+.formation__cours__invisible {
+  display: none;
+}
 
 .cours__titre {
   font-size: 1.5rem;
-  color: black;
+  color: rgb(0, 0, 0);
   margin: 5px 0px;
 }
 
 .cours__sigle {
   font-size: 1.2rem;
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 0;
 }
 
 .cours__description {
   font-size: 1rem;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+  background-repeat: no-repeat;
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+  background-repeat: no-repeat;
+}
+
+.comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+  background-repeat: no-repeat;
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+  background-repeat: no-repeat;
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+  background-repeat: no-repeat;
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+  background-repeat: no-repeat;
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+  background-repeat: no-repeat;
 }
 
 .erreur-404 .erreur-404__message-1 {
@@ -484,7 +580,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #021E73;
+  background-color: #6092a1;
   color: #ffffff;
   padding-left: 10px;
 }
@@ -645,7 +741,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Clown Font";
-  background-color: #A60321;
+  background-color: #3ab8a2;
   padding: 15px;
 }
 .site__footer__menu__ul {
@@ -695,12 +791,16 @@ COMPOSANTES
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 4px dotted #ffffff;
   flex: 0 0 30%;
+}
+@media screen and (min-width: 800px) {
+  .site__footer__colonne section {
+    border: 4px dotted #ffffff;
+  }
 }
 .site__footer__colonne h2 {
   font-size: 1.5rem;
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: "Clown Font";
   text-align: center;
 }
@@ -717,9 +817,11 @@ COMPOSANTES
   font-family: "Times New Roman", Times, serif;
 }
 .site__footer__colonne .footer__liens {
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 1rem;
   color: #ffffff;
   font-family: "Times New Roman", Times, serif;
@@ -727,6 +829,15 @@ COMPOSANTES
 @media screen and (min-width: 800px) {
   .site__footer__colonne .footer__liens {
     font-size: 1.5rem;
+  }
+}
+.site__footer__colonne .footer__liens .widget-title {
+  font-family: "Clown Font";
+  color: rgb(0, 0, 0);
+}
+@media screen and (min-width: 800px) {
+  .site__footer__colonne .footer__liens .widget-title {
+    font-size: 3rem;
   }
 }
 .site__footer__colonne .footer__adresse {
@@ -769,23 +880,276 @@ COMPOSANTES
   text-align: center;
 }
 .article__titre {
-  color: #ffffff;
   text-align: center;
   font-family: "Clown Font";
   font-size: 2.5rem;
+  animation: couleur 4s forwards;
 }
 @media screen and (min-width: 800px) {
   .article__titre {
     font-size: 4rem;
   }
 }
+@keyframes couleur {
+  from {
+    color: rgb(0, 0, 0);
+  }
+  to {
+    color: #ffffff;
+  }
+}
 
+/* CSS */
+.cours__desc__ouvrir {
+  margin-left: 10px;
+  margin-top: 5px;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.cours__desc__ouvrir:hover,
+.cours__desc__ouvrir:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #575757;
+}
+
+.cours__desc__ouvrir:active {
+  opacity: 0.5;
+}
+
+/*----------------- Navigation Catégorie Cours --------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ff9f9f;
+}
+@media screen and (min-width: 800px) {
+  .menu-categorie_cours-container .menu .menu-item {
+    font-size: 1.2rem;
+    font-family: "Clown Font";
+  }
+}
+.menu-categorie_cours-container .menu .menu-item a {
+  color: black;
+}
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #6092a1;
+}
+@media screen and (min-width: 800px) {
+  .menu-categorie_cours-container .menu .menu-item:hover {
+    animation: anim-nav 1s forwards;
+  }
+  @keyframes anim-nav {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+}
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #ffffff;
+}
+.menu-categorie_cours-container .menu .menu-item .current-menu-item {
+  background-color: rgb(6, 25, 61);
+}
+.menu-categorie_cours-container .menu .menu-item .current-menu-item a {
+  color: rgb(243, 233, 142);
+}
+
+.menu-accueil-container .menu, .menu-evenement-container .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.menu-accueil-container .menu .menu-item-246 .menu-item-icone, .menu-evenement-container .menu .menu-item-246 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=puzzle");
+}
+.menu-accueil-container .menu .menu-item-245 .menu-item-icone, .menu-evenement-container .menu .menu-item-245 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=star");
+}
+.menu-accueil-container .menu .menu-item-244 .menu-item-icone, .menu-evenement-container .menu .menu-item-244 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user");
+}
+.menu-accueil-container .menu .menu-item-243 .menu-item-icone, .menu-evenement-container .menu .menu-item-243 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=trending-up");
+}
+.menu-accueil-container .menu .menu-item-262 .menu-item-icone, .menu-evenement-container .menu .menu-item-262 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=document");
+}
+.menu-accueil-container .menu .menu-item-261 .menu-item-icone, .menu-evenement-container .menu .menu-item-261 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=eye");
+}
+.menu-accueil-container .menu .menu-item-260 .menu-item-icone, .menu-evenement-container .menu .menu-item-260 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=film");
+}
+.menu-accueil-container .menu .menu-item-259 .menu-item-icone, .menu-evenement-container .menu .menu-item-259 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=emoji-happy");
+}
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff9f9f;
+  border-radius: 15px;
+  flex: 0 0 20%;
+  height: 200px;
+}
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Clown Font";
+  font-size: 1.5rem;
+  text-align: center;
+  height: 100%;
+}
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
+  width: 90%;
+}
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+  font-size: 1.3rem;
+}
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+  color: black;
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  background-size: cover;
+}
+.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
+  background-color: #6092a1;
+}
+@media screen and (min-width: 800px) {
+  .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
+    animation: anim-nav 1s forwards;
+  }
+  @keyframes anim-nav {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+}
+.menu-accueil-container .menu .menu-item:hover a, .menu-evenement-container .menu .menu-item:hover a {
+  color: #ffffff;
+}
+
+.menu-accueil-container .menu-item {
+  background-color: #ff9f9f;
+}
+.menu-accueil-container .menu-item a {
+  color: black;
+}
+.menu-accueil-container .menu-item:hover {
+  background-color: #6092a1;
+}
+.menu-accueil-container .menu-item:hover a {
+  color: #ffffff;
+}
+
+.menu-evenement-container .menu-item {
+  background-color: #ff9f9f;
+}
+.menu-evenement-container .menu-item a {
+  color: rgb(0, 0, 0);
+}
+.menu-evenement-container .menu-item:hover {
+  background-color: rgb(12, 92, 240);
+}
+.menu-evenement-container .menu-item:hover a {
+  color: #ffffff;
+}
+
+.boite__modale {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  border: 5px solid #aaa;
+  background-color: #a60321;
+  width: 50%;
+  height: 50%;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+.boite__modale__fermeture {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.boite__modale__fermeture:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.boite__modale__fermeture:active {
+  transform: scale(0.95);
+}
+.boite__modale__texte {
+  text-align: center;
+}
+
+.ouvrir {
+  transform: scale(1);
+}
+
+/* CSS */
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 .animation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .animation__bloc {
   display: flex;
@@ -793,8 +1157,7 @@ ANIMATION
   align-items: center;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  background-color: #fcb900;
+  background-color: #ff9f9f;
   color: #ffffff;
   font-size: 3rem;
   animation: anim-entete 1s forwards;
@@ -814,13 +1177,25 @@ ANIMATION
 .animation__bloc__cinq {
   animation: anim-entete 4s forwards;
 }
+.animation__bloc__six {
+  animation: anim-entete 4.5s forwards;
+}
+.animation__bloc__sept {
+  animation: anim-entete 5s forwards;
+}
 
 @keyframes anim-entete {
   0% {
-    transform: translateY(-100vh);
+    transform: scale(3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: rotate(180deg);
   }
   100% {
-    transform: translateY(0);
+    transform: rotate(360deg);
   }
 }
 .erreur-404__animation {
@@ -871,6 +1246,7 @@ LAYOUT
 .site {
   background-color: #F2F2F2;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
 }
 
 .home::after {
@@ -882,29 +1258,29 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffe600;
+  background-color: #ff9f9f;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: rbga(#021E73, 0.5);
+  background-color: rbga(#6092a1, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #0F8AA6;
+  background-color: #c98990;
 }
 
-.site__main {
+.site .site__main {
   grid-area: main;
-  background-color: rgba #BF3459, 0.5;
+  background-color: rgba #f05858, 0.5;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #A60321;
+  background-color: #3ab8a2;
 }
 
 /*configuration mobile */

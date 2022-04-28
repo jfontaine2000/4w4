@@ -9,9 +9,24 @@
     display: flex;
     flex-direction: column;
 
+    &__filtre{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        a{
+            font-size: 1.5rem;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 2px dotted black;
+            font-family: $font__titre;
+        }
+    }
+
     &__titre {
         font-size: 2rem;
         color: $color__font-main;
+        padding: 50px;
         margin: 10px 0px;
         font-family: $font__titre;
         text-align: center;
@@ -25,6 +40,8 @@
     }
     
     &__cours {
+        background-position: 97% 3%;
+        background-size: 2rem 2rem;
         border-radius: 5px;
         margin: 10px;
         display: flex;
@@ -37,7 +54,11 @@
             width: 30%;
         }
         padding: 10px;
+        &__invisible {
+            display : none;
+        }
     }
+    
 
 
 }
@@ -57,4 +78,33 @@
 
 .cours__description {
     font-size: 1rem;
+}
+
+.web {
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+    background-repeat: no-repeat;
+}
+.jeu{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+    background-repeat: no-repeat;
+}
+.comm {
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=users');
+    background-repeat: no-repeat;
+}
+.design {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+    background-repeat: no-repeat;
+}
+.utilitaire{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+    background-repeat: no-repeat;
+}
+.video {
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+    background-repeat: no-repeat;
+}
+.creation-3d {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+    background-repeat: no-repeat;
 }

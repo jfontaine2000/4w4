@@ -1,7 +1,6 @@
 <?php get_header() ?>
 <main class="site__main">
 
-          <h1>---- single-post.php ------</h1>
      <?php if (have_posts()): the_post(); ?>
      <article class="article">
      <h1 class="article__titre"><?= get_the_title(); ?> </h1>   

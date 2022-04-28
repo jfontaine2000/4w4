@@ -1,0 +1,132 @@
+.menu-accueil-container, .menu-evenement-container { //nav
+
+    .menu { //ul
+        display : flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        .menu-item-246 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=puzzle');
+        }
+        .menu-item-245 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=star');
+        }
+        .menu-item-244 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=user');
+        }
+        .menu-item-243 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=trending-up');
+        }
+
+        .menu-item-262 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=document');
+        }
+        .menu-item-261 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=eye');
+        }
+        .menu-item-260 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=film');
+        }
+        .menu-item-259 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=emoji-happy');
+        }
+
+        .menu-item { //li
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color__bouton__background;
+            border-radius: 15px;
+            //width: 20%;
+            flex : 0 0 20%;
+            height : 200px;
+            a {
+                display : flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Clown Font';
+                font-size: 1.5rem;
+                text-align: center;
+                height : 100%;
+                hr{
+                    width : 90%;
+                }
+                .menu-item-description { // span
+                    font-size: 1.3rem;
+                }
+                .menu-item-icone{
+                    color: black;
+                    width : 3rem;
+                    height : 3rem;
+                    background-position : center;
+                    background-repeat: no-repeat;
+                    margin-top : auto;
+                    background-size: cover;
+                }
+
+            }
+            &:hover {
+                background-color: $color__bouton__background--hover;
+            @media screen and (min-width : $largeur__media--tablette){
+                animation : anim-nav 1s forwards;
+
+                @keyframes anim-nav {
+                    from {
+                      transform: scale(1);
+                    }
+                  
+                    to {
+                      transform: scale(1.1);
+                    }
+                  }
+            }
+                a {
+                    color: $color__bouton__color--hover;
+                }
+            }
+        }
+
+
+    }
+
+
+
+} // fin .menu-accueil-container
+
+.menu-accueil-container {
+    .menu-item {
+        background-color: $color__bouton__background;
+        a{
+            color : $color__bouton__color;
+   
+        }
+    &:hover{
+        background-color: $color__bouton__background--hover;
+        a{
+            color : $color__bouton__color--hover;
+        }
+    }    
+    }
+}
+
+
+
+.menu-evenement-container {
+
+    .menu-item {
+        background-color: $couleur__carte__evenement__background ;
+        a{
+            color: $couleur__carte__evenement ;
+   
+        }
+    &:hover{
+        background-color: $couleur__carte__evenement__background--hover ;
+        a{
+            color: $couleur__carte__evenement--hover ;
+        }
+    }    
+    }
+
+}

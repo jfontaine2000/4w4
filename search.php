@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <main class="site__main">
-    <h1>------search.php-------</h1>
     <?php if(have_posts()): ?>
     <?php while(have_posts()): the_post()?>
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a> 
