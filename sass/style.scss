@@ -1,5 +1,5 @@
 /*
-theme name: exercice-4-joannye-fontaine
+theme name: lab8-joannye-fontaine
 Author: Joannye Fontaine
 Author URI: https://github.com/jfontaine2000/4w4.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -47,6 +47,7 @@ ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
 @import "animation/erreur";
+@import "animation/burger";
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
