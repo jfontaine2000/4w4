@@ -49,7 +49,7 @@ wp_nav_menu(array(
     X
     </button>
     <p class="boite__modale__texte">
-        Ceci est un premier test de boite modale
+        <img>
     </p>
 </div>
 

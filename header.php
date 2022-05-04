@@ -13,15 +13,19 @@
 
     <?php wp_head() ?>
     <style>
-        .home::after{
-            background-color: <?= get_theme_mod("background_clippath");?>;
+        .site__footer {
+        background-color:<?= get_theme_mod('couleur_background_footer'); ?>;
+        }
+
+        .site__header {
+            background-color:  <?= get_theme_mod('couleur_background_body'); ?>;
         }
     </style>
     <?php show_admin_bar(true); ?>
 </head>
 
 <body <?php body_class("site"); ?>>
-    <header class="site__header"    style="background-color:<?= get_theme_mod("background_body");?>;">
+    <header class="site__header">
         <section class="site__header__titre">
         <?= get_custom_logo(); ?>
         <h1 class="header__titre">
