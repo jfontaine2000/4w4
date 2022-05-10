@@ -23,12 +23,12 @@
         <section class="footer__nav"></section>
         <section class="footer__copyright"></section>
         <section class="footer__sociaux">
-        <?php get_sidebar('footer_ligne_1'); ?>
+            <?php get_sidebar('footer_ligne_1'); ?>
         </section>
         <section class="footer__auteur"></section>
         <section class="footer__copyright">
-        <?php get_sidebar('footer_ligne_2'); ?>
-    </section>
+            <?php get_sidebar('footer_ligne_2'); ?>
+        </section>
     </div>
 
     <?php 
@@ -45,13 +45,18 @@ wp_nav_menu(array(
 </footer>
 
 <div class="boite__modale">
-    <button class="boite__modale__fermeture">
-    X
+    <button class="boite__modale__ferme">
+        X
     </button>
     <p class="boite__modale__texte">
-        <img>
     </p>
 </div>
+
+    <div class="boite__carrousel">
+        <button class="boite__carrousel__ferme">X</button>
+        <section class="boite__carrousel__navigation"></section>
+    </div>
+
 
 <?php wp_footer(); ?>
 </body>
