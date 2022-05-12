@@ -1,9 +1,8 @@
-# Exercice #2 - 4W4 - Conception d'interface et développement Web
+# TP#2 - 4W4 - Conception d'interface et développement Web
 ### Auteur : Joannye Fontaine
-### Date de remise : 18 mars 2022
+### Date de remise : 13 mai 2022
 
 ```
-Le premier Travail Personnel de la session
+Le deuxième Travail Personnel de la session
 
-Pour modifier readme.md
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+Github page: https://github.com/jfontaine2000/4w4
