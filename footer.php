@@ -43,7 +43,7 @@ wp_nav_menu(array(
                     "link_before"=>$icone)); ?>
     <div class="footer__recherche"><?php get_search_form(); ?></div>
 </footer>
-
+<!-- boîte modale -->
 <div class="boite__modale">
     <button class="boite__modale__ferme">
         X
@@ -51,7 +51,7 @@ wp_nav_menu(array(
     <p class="boite__modale__texte">
     </p>
 </div>
-
+<!-- boîte carrousel -->
     <div class="boite__carrousel">
         <button class="boite__carrousel__ferme">X</button>
         <section class="boite__carrousel__navigation"></section>
