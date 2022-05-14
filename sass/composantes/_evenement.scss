@@ -1,11 +1,32 @@
 .evenement {
-
+    
     &__resume {
-
+        font-family: $font__principal;
+        font-size: 2rem;
+        text-align: center;
+        background-color: white;
     }
 
     &__endroit{
-        
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    &__date{
+        text-align: center;
+        font-size: 1.8rem;
+        background-color: white;
+    }
+
+    &__heure{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    &__organisateur{
+        text-align: center;
+        font-size: 1.6rem;
+        background-color: white;
     }
 
     

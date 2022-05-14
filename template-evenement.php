@@ -10,7 +10,6 @@
 <?php get_header() ?>
 <main class="site__main">
      <article class="evenement">
-          <h1>---- Template evenement ------</h1>
           <?php if (have_posts()): the_post(); ?>
           <h1><?php the_title() ?></h1>
           <section class="evenement__resume">

@@ -1095,6 +1095,31 @@ COMPOSANTES
   color: #ffffff;
 }
 
+.evenement__resume {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  background-color: white;
+}
+.evenement__endroit {
+  text-align: center;
+  font-size: 1.9rem;
+}
+.evenement__date {
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: white;
+}
+.evenement__heure {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.evenement__organisateur {
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: white;
+}
+
 .boite__modale, .boite__carrousel {
   position: fixed;
   border: 10px solid #bdbdbd;
