@@ -54,7 +54,10 @@
                     width : 90%;
                 }
                 .menu-item-description { // span
-                    font-size: 1.3rem;
+                    font-size: .5rem;
+                    @media screen and (min-width : $largeur__media--tablette) {
+                        font-size: 1.3rem;
+                    }
                 }
                 .menu-item-icone{
                     color: black;
