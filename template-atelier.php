@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Annonce
+* Template Name: Atelier
 *
 * @package WordPress
 * @subpackage cidw_4w4
@@ -10,7 +10,7 @@
 <?php get_header() ?>
 <main class="site__main">
 
-    <h1>---- Template annonce ------</h1>
+    <h1>---- Template Atelier ------</h1>
    <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
         <?php the_content() ?>        
