@@ -9,4 +9,33 @@
     h2 {
         font-style: italic;
     }
+    &__animateur {
+        text-align: center;
+        background-color: $color__font-header;
+    }
+    &__local {
+        text-align: center;
+    }
+    &__description {
+        text-align: center;
+        font-style: italic;
+        background-color: $color__font-header;
+    }
+    &__duree {
+        text-align: center;
+    }
+    &__debut {
+        text-align: center;
+        background-color: $color__font-header;
+    }
+    &__fin {
+        text-align: center;
+    }
+    &__jours {
+        text-align: center;
+        background-color: $color__font-header;
+    }
+    &__heures {
+        text-align: center;
+    }
 }

@@ -1254,6 +1254,35 @@ Galerie gutenberg de la page d'accueil
 .atelier h2 {
   font-style: italic;
 }
+.atelier__animateur {
+  text-align: center;
+  background-color: #ffffff;
+}
+.atelier__local {
+  text-align: center;
+}
+.atelier__description {
+  text-align: center;
+  font-style: italic;
+  background-color: #ffffff;
+}
+.atelier__duree {
+  text-align: center;
+}
+.atelier__debut {
+  text-align: center;
+  background-color: #ffffff;
+}
+.atelier__fin {
+  text-align: center;
+}
+.atelier__jours {
+  text-align: center;
+  background-color: #ffffff;
+}
+.atelier__heures {
+  text-align: center;
+}
 
 /* ---------------------------------------------------------
 ANIMATION
