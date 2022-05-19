@@ -1245,6 +1245,16 @@ Galerie gutenberg de la page d'accueil
   align-items: center;
 }
 
+.atelier h1 {
+  font-family: Clown Font;
+  text-align: center;
+  color: #ffffff;
+  font-size: 5rem;
+}
+.atelier h2 {
+  font-style: italic;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
