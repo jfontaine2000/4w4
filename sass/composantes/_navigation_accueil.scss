@@ -1,4 +1,4 @@
-.menu-accueil-container, .menu-evenement-container { //nav
+.menu-accueil-container, .menu-evenement-container, .menu-atelier-container { //nav
 
     .menu { //ul
         display : flex;
@@ -29,6 +29,18 @@
         }
         .menu-item-259 .menu-item-icone{
             background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=emoji-happy');
+        }
+        .menu-item-388 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=html');
+        }
+        .menu-item-387 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=git');
+        }
+        .menu-item-386 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');
+        }
+        .menu-item-385 .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=css');
         }
 
         .menu-item { //li
@@ -132,4 +144,21 @@
     }    
     }
 
+}
+
+.menu-atelier-container {
+
+    .menu-item {
+        background-color: $couleur__carte__evenement__background ;
+        a{
+            color: $couleur__carte__evenement ;
+   
+        }
+    &:hover{
+        background-color: $couleur__carte__evenement__background--hover ;
+        a{
+            color: $couleur__carte__evenement--hover ;
+        }
+    }    
+    }
 }

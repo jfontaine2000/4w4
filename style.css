@@ -979,37 +979,49 @@ COMPOSANTES
   color: rgb(243, 233, 142);
 }
 
-.menu-accueil-container .menu, .menu-evenement-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu, .menu-atelier-container .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
-.menu-accueil-container .menu .menu-item-246 .menu-item-icone, .menu-evenement-container .menu .menu-item-246 .menu-item-icone {
+.menu-accueil-container .menu .menu-item-246 .menu-item-icone, .menu-evenement-container .menu .menu-item-246 .menu-item-icone, .menu-atelier-container .menu .menu-item-246 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=puzzle");
 }
-.menu-accueil-container .menu .menu-item-245 .menu-item-icone, .menu-evenement-container .menu .menu-item-245 .menu-item-icone {
+.menu-accueil-container .menu .menu-item-245 .menu-item-icone, .menu-evenement-container .menu .menu-item-245 .menu-item-icone, .menu-atelier-container .menu .menu-item-245 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=star");
 }
-.menu-accueil-container .menu .menu-item-244 .menu-item-icone, .menu-evenement-container .menu .menu-item-244 .menu-item-icone {
+.menu-accueil-container .menu .menu-item-244 .menu-item-icone, .menu-evenement-container .menu .menu-item-244 .menu-item-icone, .menu-atelier-container .menu .menu-item-244 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user");
 }
-.menu-accueil-container .menu .menu-item-243 .menu-item-icone, .menu-evenement-container .menu .menu-item-243 .menu-item-icone {
+.menu-accueil-container .menu .menu-item-243 .menu-item-icone, .menu-evenement-container .menu .menu-item-243 .menu-item-icone, .menu-atelier-container .menu .menu-item-243 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=trending-up");
 }
-.menu-accueil-container .menu .menu-item-262 .menu-item-icone, .menu-evenement-container .menu .menu-item-262 .menu-item-icone {
+.menu-accueil-container .menu .menu-item-262 .menu-item-icone, .menu-evenement-container .menu .menu-item-262 .menu-item-icone, .menu-atelier-container .menu .menu-item-262 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=document");
 }
-.menu-accueil-container .menu .menu-item-261 .menu-item-icone, .menu-evenement-container .menu .menu-item-261 .menu-item-icone {
+.menu-accueil-container .menu .menu-item-261 .menu-item-icone, .menu-evenement-container .menu .menu-item-261 .menu-item-icone, .menu-atelier-container .menu .menu-item-261 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=eye");
 }
-.menu-accueil-container .menu .menu-item-260 .menu-item-icone, .menu-evenement-container .menu .menu-item-260 .menu-item-icone {
+.menu-accueil-container .menu .menu-item-260 .menu-item-icone, .menu-evenement-container .menu .menu-item-260 .menu-item-icone, .menu-atelier-container .menu .menu-item-260 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=film");
 }
-.menu-accueil-container .menu .menu-item-259 .menu-item-icone, .menu-evenement-container .menu .menu-item-259 .menu-item-icone {
+.menu-accueil-container .menu .menu-item-259 .menu-item-icone, .menu-evenement-container .menu .menu-item-259 .menu-item-icone, .menu-atelier-container .menu .menu-item-259 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=emoji-happy");
 }
-.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item-388 .menu-item-icone, .menu-evenement-container .menu .menu-item-388 .menu-item-icone, .menu-atelier-container .menu .menu-item-388 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+.menu-accueil-container .menu .menu-item-387 .menu-item-icone, .menu-evenement-container .menu .menu-item-387 .menu-item-icone, .menu-atelier-container .menu .menu-item-387 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+.menu-accueil-container .menu .menu-item-386 .menu-item-icone, .menu-evenement-container .menu .menu-item-386 .menu-item-icone, .menu-atelier-container .menu .menu-item-386 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+.menu-accueil-container .menu .menu-item-385 .menu-item-icone, .menu-evenement-container .menu .menu-item-385 .menu-item-icone, .menu-atelier-container .menu .menu-item-385 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1019,7 +1031,7 @@ COMPOSANTES
   flex: 0 0 20%;
   height: 200px;
 }
-.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a, .menu-atelier-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1029,18 +1041,18 @@ COMPOSANTES
   text-align: center;
   height: 100%;
 }
-.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr, .menu-atelier-container .menu .menu-item a hr {
   width: 90%;
 }
-.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description, .menu-atelier-container .menu .menu-item a .menu-item-description {
   font-size: 0.5rem;
 }
 @media screen and (min-width: 800px) {
-  .menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+  .menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description, .menu-atelier-container .menu .menu-item a .menu-item-description {
     font-size: 1.3rem;
   }
 }
-.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone, .menu-atelier-container .menu .menu-item a .menu-item-icone {
   color: black;
   width: 3rem;
   height: 3rem;
@@ -1049,11 +1061,11 @@ COMPOSANTES
   margin-top: auto;
   background-size: cover;
 }
-.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
+.menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover, .menu-atelier-container .menu .menu-item:hover {
   background-color: #6092a1;
 }
 @media screen and (min-width: 800px) {
-  .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
+  .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover, .menu-atelier-container .menu .menu-item:hover {
     animation: anim-nav 1s forwards;
   }
   @keyframes anim-nav {
@@ -1065,7 +1077,7 @@ COMPOSANTES
     }
   }
 }
-.menu-accueil-container .menu .menu-item:hover a, .menu-evenement-container .menu .menu-item:hover a {
+.menu-accueil-container .menu .menu-item:hover a, .menu-evenement-container .menu .menu-item:hover a, .menu-atelier-container .menu .menu-item:hover a {
   color: #ffffff;
 }
 
@@ -1092,6 +1104,19 @@ COMPOSANTES
   background-color: rgb(12, 92, 240);
 }
 .menu-evenement-container .menu-item:hover a {
+  color: #ffffff;
+}
+
+.menu-atelier-container .menu-item {
+  background-color: #ff9f9f;
+}
+.menu-atelier-container .menu-item a {
+  color: rgb(0, 0, 0);
+}
+.menu-atelier-container .menu-item:hover {
+  background-color: rgb(12, 92, 240);
+}
+.menu-atelier-container .menu-item:hover a {
   color: #ffffff;
 }
 
